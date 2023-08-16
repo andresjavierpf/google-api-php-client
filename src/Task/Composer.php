@@ -50,6 +50,15 @@ class Composer
                     $vendorDir
                 );
             }
+
+            if (!is_dir($serviceDir)) {
+                // path for google/apiclient-services >= 0.200.0
+                $serviceDir = sprintf(
+                    '%s/google/devman-apiclient-services/src',
+                    $vendorDir
+                );
+            }
+
             self::verifyServicesToKeep($serviceDir, $servicesToKeep);
             $finder = self::getServicesToRemove($serviceDir, $servicesToKeep);
             $filesystem = $filesystem ?: new Filesystem();
