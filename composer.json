@@ -16,7 +16,7 @@
     "require": {
         "php": "^7.4|^8.0",
         "google/auth": "^1.28",
-        "google/devman-apiclient-services": "v0.312.0",
+        "google/devman-apiclient-services": "^0.312.0",
         "firebase/php-jwt": "~6.0",
         "monolog/monolog": "^2.9||^3.0",
         "phpseclib/phpseclib": "^3.0.2",
